@@ -1,0 +1,462 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    font-family: 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header mulai */
+.header-container {
+	font-size: 16px;
+    color: white;
+    background-color: transparent;
+    padding: 20px 50px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.brand-container {
+	margin-right: 30px;
+}
+
+.brand {
+    height: 43px;
+    width: 115px;
+}
+
+.menu-container {
+	padding-top: 10px;
+	display: flex;
+}
+
+.menu-container .menu {
+	margin-right: 20px;
+	transition: 500ms;
+	cursor: pointer;
+}
+
+.menu-container .menu:hover {
+	color: rgb(223, 23, 80);
+}
+
+.menu-container .menu span {
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+
+/* Produk pilihan mulai */
+.menu-container .menu-products:hover .products-menu {
+	display: flex;
+}
+
+.products-menu {
+	margin-top: 20px;
+	position: absolute;
+	display: none;
+}
+
+.products-menu .menu-left,
+.products-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.products-menu .menu-left {
+	background-color: white;
+	width: 60vh;
+	height: 60vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.products-menu .menu-left > div {
+	width: 50%;
+	color: rgb(95, 93, 93);
+	padding-top: 15px;
+}
+
+.products-menu .menu-left > div span {
+	color: rgb(223, 23, 80);
+	font-size: 15px;
+	margin-right: 5px;
+	margin-left: -2px;
+}
+
+.products-menu .menu-left > div ul,
+.products-menu .menu-right ul {
+	padding-top: 10px;
+}
+
+.products-menu .menu-left > div ul li,
+.products-menu .menu-right ul li {
+	padding: 10px 0;
+}
+
+.products-menu .menu-right {
+	background-color: whitesmoke;
+	width: 30vh;
+	color: gray;
+	padding-top: 35px;
+}
+
+.products-menu .menu-left > div ul li:hover,
+.products-menu .menu-right ul li:hover {
+	color: rgb(223, 23, 80);
+}
+/* Produk pilihan selesai */
+
+
+/* Solusi pilihan mulai*/
+.menu-container .menu-solutions:hover .solutions-menu {
+	display: flex;
+}
+
+.solutions-menu {
+	position: absolute;
+	margin-top: 20px;
+	display: none;
+	color: rgb(95, 93, 93);
+}
+
+.solutions-menu .menu-left {
+	background-color: white;
+	width: 20vh;
+	height: 35vh;
+}
+
+.solutions-menu .menu-right {
+	width: 40vh;
+	background-color: whitesmoke;
+}
+
+.solutions-menu .menu-left,
+.solutions-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.solutions-menu .menu-left ul,
+.solutions-menu .menu-right ul {
+	padding-top: 5px;
+}
+
+.solutions-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.solutions-menu .menu-right p {
+	padding: 15px 0;
+}
+
+.solutions-menu .menu-left ul li:hover,
+.solutions-menu .menu-right ul li:hover {
+	color: rgb(223, 23, 80);
+}
+/* Solusi pilihan selesai */
+
+
+/* Developers pilihan mulai */
+.menu-container .menu-developers:hover .developers-menu {
+	display: flex;
+}
+
+.developers-menu {
+	position: absolute;
+	margin-top: 20px;
+	color: rgb(95, 93, 93);
+	display: none;
+}
+
+.developers-menu .menu-left {
+	background-color: white;
+	width: 20vh;
+	height: 35vh;
+}
+
+.developers-menu .menu-right {
+	width: 20vh;
+	background-color: whitesmoke;
+}
+
+.developers-menu .menu-left,
+.developers-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.developers-menu .menu-left ul {
+	padding-top: 5px;
+}
+
+.developers-menu .menu-right p {
+	padding-top: 14px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.developers-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.developers-menu .menu-right ul li {
+	margin-top: 14px;
+	padding-top: 5px;
+}
+
+.developers-menu .menu-left ul li:hover,
+.developers-menu .menu-right ul li:hover {
+	color: rgb(223, 23, 80);
+}
+/* Developers pilihan selesai */
+
+
+/* Company pilihan mulai*/
+.menu-container .menu-company:hover .company-menu {
+	display: flex;
+}
+
+.company-menu {
+	position: absolute;
+	margin-top: 20px;
+	display: none;
+	color: rgb(95, 93, 93);
+}
+
+.company-menu .menu-left {
+	background-color: white;
+	width: 20vh;
+	height: 35vh;
+}
+
+.company-menu .menu-right {
+	width: 40vh;
+	background-color: whitesmoke;
+}
+
+.company-menu .menu-left,
+.company-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.company-menu .menu-left ul,
+.company-menu .menu-right ul {
+	padding-top: 5px;
+}
+
+.company-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.company-menu .menu-right p {
+	padding: 15px 0;
+}
+
+.company-menu .menu-left ul li:hover,
+.company-menu .menu-right ul li:hover {
+	color: rgb(223, 23, 80);
+}
+/* Company pilihan selesai */
+
+
+/* Resources pilihan mulai */
+.menu-container .menu-resources:hover .resources-menu {
+	display: flex;
+}
+
+.resources-menu {
+	position: absolute;
+	margin-top: 20px;
+	display: none;
+	color: rgb(95, 93, 93);
+}
+
+.resources-menu .menu-left {
+	background-color: white;
+	width: 20vh;
+	height: 35vh;
+}
+
+.resources-menu .menu-right {
+	width: 40vh;
+	background-color: whitesmoke;
+}
+
+.resources-menu .menu-left,
+.resources-menu .menu-right {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.resources-menu .menu-left ul,
+.resources-menu .menu-right ul {
+	padding-top: 5px;
+}
+
+.resources-menu .menu-left ul li {
+	padding: 10px 0;
+}
+
+.resources-menu .menu-right p {
+	padding: 15px 0;
+}
+
+.resources-menu .menu-left ul li:hover,
+.resources-menu .menu-right ul li:hover {
+	color: rgb(223, 23, 80);
+}
+/* Resources pilihan selesai */
+
+
+.bars-container {
+	display: none;
+}
+
+.login-container {
+	padding-top: 13px;
+	margin-left: auto;
+	display: flex;
+}
+
+.login-container .sign-in {
+	margin-right: 20px;
+	transition: 500ms;
+}
+
+.login-container .sign-in:hover {
+	color: rgb(223, 23, 80);
+	cursor: pointer;
+}
+
+.login-container .get-started {
+	border: 1px solid rgb(223, 23, 80);
+	border-radius: 25px;
+	width: 110px;
+	height: 30px;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-left: 20px;
+	position: relative;
+	bottom: 10px;
+	transition: 500ms;
+}
+
+.login-container .get-started span {
+	font-size: 10px;
+	margin-left: 5px;
+	color: rgb(223, 23, 80);
+	position: relative;
+	bottom: 1px;
+}
+
+.login-container .get-started:hover {
+	color: rgb(223, 23, 80);
+	border-color: white;
+	cursor: pointer;
+}
+
+.login-container .get-started:hover span {
+	color: white;
+}
+/* Header selesai */
+
+
+/* body mulai */
+.body-container{
+    height: 120vh;
+    background: linear-gradient(to bottom, #0b1124 0%, #12244c 100%);
+    padding-top: 70px;
+    color: white;
+}
+.body-komponen{
+    padding-top: 90px;
+}
+.body-textgede{
+    text-align: center;
+    font-family: 'Overpass','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 56px;
+    font-weight: 1000;
+}
+.body-textkedua{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    line-height: 38px;
+}
+.button-container{
+    border: 2.5px solid #EC0041;
+    width: 130px;
+    font-size: 18px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 20px;
+    margin-top: 10px;
+    background-color: #EC0041;
+}
+
+.button-container:hover {
+    color: gray;
+	cursor: pointer;
+}
+
+
+.body-btn{
+   display: flex;
+   justify-content: center;
+}
+.image-container {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.image-container .image-component {
+    height: 575px;
+    width: 750px;
+    z-index: 1;
+}
+
+.imgmobil {
+    border-radius: 15px;
+}
+/* body selesai */
+
+
+/* Tablet mulai */
+@media only screen and (max-width: 600px) {
+	.menu-container {
+		display: none;
+	}
+
+	.bars-container {
+		display: block;
+		margin-left: auto;
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.bars-container:hover {
+        color: rgb(223, 23, 80);
+	    cursor: pointer;
+        
+	}
+
+	.login-container {
+		display: none;
+	}
+}
+/* Tablet selesai */
+
